@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Library App - Book Info</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-700 flex items-center justify-center p-6">
+    <div class="bg-white bg-opacity-90 backdrop-blur-md rounded-xl shadow-xl max-w-3xl w-full p-10">
+        <header class="mb-8 text-center">
+        <h1 class="text-4xl font-extrabold text-indigo-900 mb-2">Library App</h1>
+        <h2 class="text-2xl font-semibold text-indigo-700">Book Information</h2>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Book Cover -->
+        <div class="flex justify-center items-center">
+            <img 
+            src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=300&q=80" 
+            alt="Book Cover" 
+            class="rounded-lg shadow-lg max-w-full h-auto"
+            />
+        </div>
+
+        <!-- Book Details -->
+        <div class="md:col-span-2">
+            <h3 class="text-3xl font-bold text-indigo-900 mb-4">The Great Library Adventure</h3>
+            <p class="text-indigo-800 mb-4 italic">by Jane Doe</p>
+            <p class="text-indigo-900 mb-6 leading-relaxed">
+            Dive into an enthralling journey through the world of books and knowledge. This captivating story explores the magic hidden in every page and the adventures that await in every library corner.
+            </p>
+
+            <div class="space-y-3 text-indigo-700">
+            <p><span class="font-semibold">Genre:</span> Fiction, Adventure</p>
+            <p><span class="font-semibold">Published:</span> 2023</p>
+            <p><span class="font-semibold">ISBN:</span> 978-1-23456-789-0</p>
+            <p><span class="font-semibold">Pages:</span> 320</p>
+            </div>
+
+            <button class="mt-8 bg-indigo-700 text-white py-3 px-6 rounded-lg font-semibold hover:bg-indigo-800 transition">
+            Borrow this Book
+            </button>
+        </div>
+        </section>
+    </div>
+</body>
+</html>
